@@ -77,12 +77,12 @@ This example demonstrates how to use Terraform to deploy a simple EC2 instance o
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
+
 
 ---
 
 ## How It Works
-
+```
 1. **Provider Configuration**: The `provider "aws"` block specifies the AWS region where the resources will be deployed.
 2. **EC2 Instance Resource**: The `aws_instance` resource defines the EC2 instance, including the AMI ID, instance type, and tags.
 3. **Input Variables**: Variables like `aws_region`, `ami_id`, and `instance_type` allow you to customize the deployment.
@@ -94,14 +94,14 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 After running `terraform apply`, you’ll see output similar to this:
 
-```
+
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 Outputs:
 
 instance_id = "i-0123456789abcdef0"
 public_ip = "54.123.45.67"
-```
+
 
 ---
 
@@ -114,5 +114,3 @@ terraform destroy
 ```
 
 ---
-
-This example provides a simple yet powerful way to automate EC2 instance deployments using Terraform. Feel free to customize it further to suit your needs! 🚀
